@@ -1,4 +1,4 @@
-<div class="container">
+<div class="con">
     <div class="header">
         <h1>MAQE Forums</h1>
     </div>
@@ -19,15 +19,15 @@
         <% i=0 %>
         <% end %>
             <div class="media">
-                <span class="media-left col-md-3">
+                <span class="media-left col-md-2">
                     <%= image_tag('phi-phi-thailand.jpg', class: "img img-responsive", style: "width:100%; height: auto; padding-bottom: 15px;") %>
                 </span>
-                <div class="media-body col-md-6">
-                    <h4><%= post['title'] %></h4>
-                    <p><%= post['body'] %></p>
-                    <p><i class="fa fa-clock-o" aria-hidden="true"></i> <i><%= time_ago_in_words(post['created_at'])+" ago" %></i></p>
+                <div class="media-body col-md-8">
+                    <h4 class="post-title"><%= post['title'] %></h4>
+                    <p class="post-body"><%= post['body'] %></p>
+                    <p class="post-date"><i class="fa fa-clock-o" aria-hidden="true"></i> <i><%= time_ago_in_words(post['created_at'])+" ago" %></i></p>
                 </div>
-                <div class="media-author col-md-3">
+                <div class="media-author col-md-2">
                     <%= image_tag(@authors[post['author_id']-1]['avatar_url'], class: "avatar pull-center") %>
                     <h4 class="authorname"><%= @authors[post['author_id']-1]['name'] %></h4>
                     <h4 class="role"><%= @authors[post['author_id']-1]['role'] %></h4>

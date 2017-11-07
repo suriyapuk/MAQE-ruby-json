@@ -8,13 +8,27 @@ body{
     min-height: 100%;
 }
 
+.con {
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
 .posts{
     font-size: 24px;
     padding-bottom: 15px;
 }
 
+.post-title{
+    color: #333333;
+}
+
 .post-body{
-    
+    color: #666666;
+}
+
+.post-date{
+    color: #aaaaaa;
 }
 
 .table{
@@ -25,7 +39,7 @@ body{
     width: 100%;
     height: 100%;
     border-radius: 10px;
-    border: 1px solid #999999;
+    border: 1px solid #dddddd;
     position: relative;
     padding-top: 15px;
     margin-bottom: 20px;
@@ -53,12 +67,15 @@ body{
 }
 
 .media-author{
-    border-left: 1px solid #999;
+    border-left: 1px solid #dddddd;
+    height: 90%;
     text-align: center;
+    margin-top: 10px;
+    margin-bottom: 20px;
 }
 
 .avatar{
-    width: 40%;
+    width: 60%;
     height: auto;
     border-radius: 50%;
 }
@@ -71,10 +88,13 @@ body{
 
 .role{
     font-size: 18px;
+    padding-top: 10px;
 }
 
 .place{
     font-size: 16px;
+    padding-top: 10px;
+    padding-bottom: 10px;
 }
 
 .pagination {
